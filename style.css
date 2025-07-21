@@ -1,0 +1,25 @@
+/* Flexbox Navigation Styles (Mobile-First) */
+nav {
+  display: flex;                /* Use Flexbox layout */
+  flex-direction: column;      /* Stack items vertically by default */
+  align-items: center;         /* Center nav links horizontally */
+  background-color: #f8f9fa;   /* Light gray background */
+  padding: 1rem;               /* Add spacing around nav */
+  gap: 0.5rem;                 /* Spacing between links */
+  border-bottom: 2px solid #ccc; /* Bottom border for separation */
+}
+
+/* Nav link styling */
+nav a {
+  text-decoration: none;       /* Remove underlines */
+  color: #000;                 /* Black text */
+  font-weight: bold;           /* Bold font for emphasis */
+}
+
+/* Horizontal layout for nav on screens 768px and wider */
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;       /* Change to horizontal layout */
+    justify-content: center;   /* Space links evenly in center */
+  }
+}
